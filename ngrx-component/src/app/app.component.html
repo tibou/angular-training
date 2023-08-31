@@ -1,0 +1,7 @@
+<ng-container *ngrxLet="datasource$; let data; let error = $error; let done = $complete">
+  <div>
+      {{data}}
+  </div>
+  <div style="color: red" *ngIf="error">Error happened: {{error}}</div>
+  <div style="color: green" *ngIf="done">The datasource is done emitting</div>
+</ng-container>
